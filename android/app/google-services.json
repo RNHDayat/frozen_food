@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "75280840116",
+    "project_id": "fir-flutter-34baf",
+    "storage_bucket": "fir-flutter-34baf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75280840116:android:9af05b21f35136b47a2ee1",
+        "android_client_info": {
+          "package_name": "com.firestore_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75280840116-but88dg897shuqeq8qlthosgulpisns4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsLFZZxfNTqIB4170TiRmLIM0JvbNTvNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75280840116-but88dg897shuqeq8qlthosgulpisns4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75280840116:android:c2ed2c4ff87df4977a2ee1",
+        "android_client_info": {
+          "package_name": "com.frozen_food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75280840116-but88dg897shuqeq8qlthosgulpisns4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsLFZZxfNTqIB4170TiRmLIM0JvbNTvNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75280840116-but88dg897shuqeq8qlthosgulpisns4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
