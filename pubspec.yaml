@@ -45,6 +45,8 @@ dependencies:
   animated_bottom_navigation_bar: ^1.1.0
   hexcolor: ^3.0.1
   dropdown_search: ^3.0.1
+  firebase_storage: ^11.0.8
+  image_picker: ^0.8.6
 
 dev_dependencies:
   flutter_test:

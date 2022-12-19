@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:frozen_food/screen/admin/adminPage.dart';
 import 'package:frozen_food/screen/home/dashboardMenu.dart';
 import 'package:frozen_food/screen/login/shared/shared.dart';
 import 'package:frozen_food/screen/profile/components/profile_screen.dart';
@@ -629,8 +630,14 @@ class _WelcomePageState extends State<WelcomePage> {
               builder: (context) => DashboardMenu(),
             ),
           );
-        } else {
-          print('not pelanggan');
+        } else if (documentSnapshot.get('rool') == "Admin"){
+           Fluttertoast.showToast(msg: "Selamat Datang Admin");
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (context) => AdminPage(),
+            ),
+          );
         }
       } else {
         print('Document does not exist on the database');

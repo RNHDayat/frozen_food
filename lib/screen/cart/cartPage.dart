@@ -72,6 +72,25 @@ class _CartPageState extends State<CartPage> {
         padding: const EdgeInsets.all(20),
         child: ListView(
           children: [
+            Row(
+              children: [
+                Icon(
+                  Icons.location_on,
+                  color: Colors.white,
+                ),
+                Text(
+                  'Surabaya',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
             Container(
               width: double.infinity,
               height: 100,
@@ -141,7 +160,6 @@ class _CartPageState extends State<CartPage> {
                                   GestureDetector(
                                     onTap: () {
                                       int jumlah = item['jumlah'];
-
                                       setState(() {
                                         jumlah--;
                                       });
@@ -238,6 +256,9 @@ class _CartPageState extends State<CartPage> {
               _visible = false;
               _disable = false;
               print(ongkir);
+            } else if (ongkir == 0) {
+              _visible = true;
+              _disable = false;
             } else if (total != 0) {
               total += ongkir;
               _visible = true;

@@ -81,7 +81,7 @@ class _ProductPageState extends State<ProductPage> {
                                   topRight: Radius.circular(12),
                                 ),
                                 child: Hero(
-                                  tag: 'img${snapshot.data!.docs[index]['id']}',
+                                  tag: 'img${snapshot.data!.docs[index]['image']}',
                                   child: Image.network(
                                     snapshot.data!.docs[index]['image'],
                                     height: 150,

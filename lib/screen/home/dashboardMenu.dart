@@ -9,8 +9,6 @@ import 'package:frozen_food/screen/home/productPage.dart';
 import 'package:frozen_food/screen/profile/components/profile_screen.dart';
 import 'package:frozen_food/services/dbService.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-
 class DashboardMenu extends StatefulWidget {
   @override
   State<DashboardMenu> createState() => _DashboardMenuState();
@@ -53,8 +51,6 @@ class _DashboardMenuState extends State<DashboardMenu> {
   Future<void> logout(BuildContext context) async {
     CircularProgressIndicator();
     await FirebaseAuth.instance.signOut();
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.remove('user');
     Fluttertoast.showToast(msg: "Logout");
 
     Navigator.pushReplacement(

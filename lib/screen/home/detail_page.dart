@@ -83,7 +83,7 @@ class _DetailPageState extends State<DetailPage> {
             child: Stack(
               children: [
                 Hero(
-                  tag: 'img${_id}',
+                  tag: 'img${_image}',
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.width,

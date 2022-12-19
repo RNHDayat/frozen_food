@@ -1,13 +1,6 @@
-import 'dart:async';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:frozen_food/screen/home/dashboardMenu.dart';
-import 'package:frozen_food/screen/login/welcome_pages.dart';
 import 'package:frozen_food/screen/splashScreen.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'screen/home/productPage.dart';
-import 'screen/profile/components/profile_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,37 +8,13 @@ void main() async {
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  int a = 0;
-  bool isLogin = false;
-  cekLogin() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    var user = prefs.getString('user');
-    if (user != null) {
-      setState(() {
-        isLogin = true;
-      });
-    }
-  }
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    // cekLogin();
-  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, 
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
