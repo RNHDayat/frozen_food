@@ -16,9 +16,8 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  // User? user = FirebaseAuth.instance.currentUser;
   route() {
-    var kk = FirebaseFirestore.instance
+    FirebaseFirestore.instance
         .collection('users')
         .doc(FirebaseAuth.instance.currentUser!.uid)
         .get()
