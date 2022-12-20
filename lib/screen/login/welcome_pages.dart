@@ -631,8 +631,8 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
           );
         } else if (documentSnapshot.get('rool') == "Admin"){
-           Fluttertoast.showToast(msg: "Selamat Datang Admin");
-          Navigator.pushReplacement(
+          Fluttertoast.showToast(msg: "Selamat Datang Admin");
+          Navigator.pushReplacement(                           
             context,
             MaterialPageRoute(
               builder: (context) => AdminPage(),
